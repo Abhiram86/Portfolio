@@ -13,11 +13,7 @@ function RouteComponent() {
       <div className="flex flex-wrap w-fit justify-center gap-4">
         <ModalCarouselProvider>
           {projects.map((project) => (
-            <>
-              <ProjectCard key={project.id} data={project} />
-              <ProjectCard key={project.id} data={project} />
-              <ProjectCard key={project.id} data={project} />
-            </>
+            <ProjectCard key={project.id} data={project} />
           ))}
         </ModalCarouselProvider>
       </div>

@@ -12,9 +12,9 @@ import ReactNative from "../assets/frameworks/react-native-app-icon.svg";
 import NextLogo from "../assets/frameworks/nextjs-icon.svg";
 import GitLogo from "../assets/frameworks/git-icon.svg";
 import TailwindLogo from "../assets/frameworks/tailwind-css-icon.svg";
-import ExpressLogo from "../assets/frameworks/express-js-icon.svg";
+import ExpressLogo from "../assets/frameworks/express.svg";
 import DockerLogo from "../assets/frameworks/docker-icon.svg";
-import PytorchLogo from "../assets/frameworks/pytorch-icon.svg";
+import PytorchLogo from "../assets/frameworks/pytorch.svg";
 
 import LeftIcon from "../assets/icons/left.svg";
 
