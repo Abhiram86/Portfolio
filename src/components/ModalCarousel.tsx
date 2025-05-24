@@ -35,11 +35,11 @@ export default function ModalCarousel({
   };
 
   return (
-    <div className="h-[400px] flex flex-col items-center space-y-4 z-10 w-96 p-2 rounded-lg fixed bg-purple-950/50 top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div className="h-[400px] flex flex-col items-center space-y-4 z-10 w-96 p-2 rounded-lg fixed ring ring-zinc-600 bg-zinc-900/50 top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2">
       <div>
         <div className="absolute w-[475px] flex justify-between top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <button
-            className={`transition-opacity duration-300 ${currentIndex === 0 ? "opacity-5" : "rounded-full border"}`}
+            className={`transition-opacity duration-300 ${currentIndex === 0 ? "opacity-5" : "rounded-full"}`}
             onClick={() => scrollTo(currentIndex - 1)}
           >
             <img
@@ -49,7 +49,7 @@ export default function ModalCarousel({
             />
           </button>
           <button
-            className={`transition-opacity duration-300 ${currentIndex === images - 1 ? "opacity-5" : "rounded-full border"}`}
+            className={`transition-opacity duration-300 ${currentIndex === images - 1 ? "opacity-5" : "rounded-full"}`}
             onClick={() => scrollTo(currentIndex + 1)}
           >
             <img
@@ -83,7 +83,7 @@ export default function ModalCarousel({
           ))}
         </div>
       </div>
-      <div className="bg-zinc-900/25 p-2 w-96 rounded-lg ring ring-zinc-600">
+      <div className="bg-zinc-900/50 p-2 w-96 rounded-lg ring ring-zinc-600">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
         accusantium necessitatibus cum dicta quos, sunt reiciendis ipsa
         architecto quisquam doloremque distinctio ratione voluptate vel deserunt
