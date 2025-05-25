@@ -4,6 +4,7 @@ import {
   ModalCarouselPropsData,
 } from "../context/ModelCarouselContext";
 import { icons } from "../utils/Icons";
+import Zoomable from "./Zoomable";
 
 export default function ModalCarousel({
   data,
@@ -74,20 +75,12 @@ export default function ModalCarousel({
           className="flex carousel rounded-lg overflow-scroll h-[360px] snap-x space-x-2 snap-proximity"
         >
           {data.pages.map((page, index) => (
-            <img
-              key={index}
-              className="w-full snap-center h-full object-cover"
-              src={page}
-              alt=""
-            />
+            <Zoomable key={index} page={page.link} />
           ))}
         </div>
       </div>
-      <div className="bg-zinc-900/50 p-2 w-96 rounded-lg ring ring-zinc-600">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-        accusantium necessitatibus cum dicta quos, sunt reiciendis ipsa
-        architecto quisquam doloremque distinctio ratione voluptate vel deserunt
-        dignissimos itaque voluptatum tempora perferendis!
+      <div className="bg-zinc-900 p-2 w-96 rounded-lg ring ring-zinc-600">
+        {data.pages[currentIndex].description}
       </div>
     </div>
   );

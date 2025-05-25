@@ -36,10 +36,22 @@ export const projects = [
     imgSrc:
       "https://github.com/Abhiram86/docquer/blob/main/images/chat_page.png?raw=true",
     pages: [
-      "https://github.com/Abhiram86/Docquer/blob/main/images/home.png?raw=true",
-      "https://github.com/Abhiram86/Docquer/blob/main/images/login.png?raw=true",
-      "https://github.com/Abhiram86/Docquer/blob/main/images/profile.png?raw=true",
-      "https://github.com/Abhiram86/Docquer/blob/main/images/chats.png?raw=true",
+      {
+        link: "https://github.com/Abhiram86/Docquer/blob/main/images/home.png?raw=true",
+        description: "home page of the app",
+      },
+      {
+        link: "https://github.com/Abhiram86/Docquer/blob/main/images/login.png?raw=true",
+        description: "login page of the app",
+      },
+      {
+        link: "https://github.com/Abhiram86/Docquer/blob/main/images/profile.png?raw=true",
+        description: "profile page of the app",
+      },
+      {
+        link: "https://github.com/Abhiram86/Docquer/blob/main/images/chats.png?raw=true",
+        description: "chats page of the app",
+      },
     ],
     liveLink: "https://docquer.vercel.app",
     sourceCode: "https://github.com/Abhiram86/docquer",
@@ -58,10 +70,22 @@ export const projects = [
     ],
     imgSrc: "https://github.com/Abhiram86/Nakama/raw/main/images/home.png",
     pages: [
-      "https://github.com/Abhiram86/Nakama/raw/main/images/profile.png",
-      "https://github.com/Abhiram86/Nakama/raw/main/images/groups.png",
-      "https://github.com/Abhiram86/Nakama/raw/main/images/mGroups.png",
-      "https://github.com/Abhiram86/Nakama/raw/main/images/mGroup.png",
+      {
+        link: "https://github.com/Abhiram86/Nakama/raw/main/images/profile.png",
+        description: "profile page",
+      },
+      {
+        link: "https://github.com/Abhiram86/Nakama/raw/main/images/groups.png",
+        description: "groups page",
+      },
+      {
+        link: "https://github.com/Abhiram86/Nakama/raw/main/images/mGroups.png",
+        description: "mobile version of groups page",
+      },
+      {
+        link: "https://github.com/Abhiram86/Nakama/raw/main/images/mGroup.png",
+        description: "mobile version of group page",
+      },
     ],
     liveLink: null,
     sourceCode: "https://github.com/Abhiram86/Nakama",

@@ -4,7 +4,10 @@ export type ModalCarouselPropsData = {
   projectId: number;
   name: string;
   imgSrc: string;
-  pages: string[];
+  pages: {
+    link: string;
+    description: string;
+  }[];
 };
 
 type ModalCarouselContextType = {
