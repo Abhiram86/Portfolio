@@ -79,9 +79,11 @@ export default function ModalCarousel({
           ))}
         </div>
       </div>
-      <div className="bg-zinc-900 p-2 w-96 rounded-lg ring ring-zinc-600">
-        {data.pages[currentIndex].description}
-      </div>
+      {data.pages.length > 0 && (
+        <div className="bg-zinc-900 p-2 w-96 rounded-lg ring ring-zinc-600">
+          {data.pages[currentIndex].description}
+        </div>
+      )}
     </div>
   );
 }

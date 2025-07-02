@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import ModalCarousel from "./ModalCarousel";
 import { ModalCarouselContext } from "../context/ModelCarouselContext";
 
@@ -9,11 +9,11 @@ interface ProjectCardProps {
     name: string;
     imgSrc: string;
   }[];
-  description: string;
+  description: string | null;
   imgSrc: string;
   liveLink: string | null;
   sourceCode: string;
-  pages: string[];
+  pages: { link: string; description: string }[];
 }
 
 export default function ProjectCard({ data }: { data: ProjectCardProps }) {
@@ -62,7 +62,7 @@ export default function ProjectCard({ data }: { data: ProjectCardProps }) {
               </a>
             </div>
           </div>
-          <p className="text-sm max-w-76 text-zinc-400">{data.description}</p>
+          <p className="text-sm max-w-76 text-zinc-400">{data?.description}</p>
           <div className="flex gap-2 items-center">
             <p className="text-zinc-400 text-sm">skills used: </p>
             <div className="flex ring ring-zinc-600 transition-all bg-zinc-800/75 w-fit px-3 py-1 rounded-3xl gap-2">
